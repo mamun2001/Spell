@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<tabs>
+  <bani>
+    <title><p>{tab=বাণী}</p></title>
+    <matter>
+      <pre>
+        অম্বরে মেঘ-মৃদঙ বাজে জলদ-তালে
+        লাগিল মাতন ঝড়ের নাচন ডালে ডালে।।
+        দিগন্তের ঐ দুর্গ-মূলে
+        ধূলি-গৈরিক কেতন দুলে
+        কে দুরন্ত আগল খুলে ঘুম ভাঙালে।।
+        থির সাগরের নীল তরঙ্গে আনন্দেরি
+        সেই নাচনের তালে তালে বাজিল ভেরি।
+        মাভৈঃ মাভৈঃ ডাক শুনি যার
+        পথ ছেড়ে দে রথ এল তাঁর।
+        দুর্দিনে সে বজ্র-শিখার আগুন জ্বালে।।
+      </pre>
+    </matter>
+  </bani>
+  <raag>
+    <title><p>{tab=রাগ ও তাল}</p></title>
+    <matter>
+      <raag>
+        <title>রাগঃ</title>
+        <value>সিন্ধু</value>
+      </raag>
+      <taal>
+        <title>তালঃ</title>
+        <value>কাহার্‌বা</value>
+      </taal>
+    </matter>
+  </raag>
+  <audio>
+    <title><p>{tab=অডিও}</p></title>
+    <matter>
+      <p>শিল্পীঃ চন্দ্রানী</p>
+      <p>{saudioplayer}Song2/chandrani_momer_putul.mp3{/saudioplayer}</p>
+    </matter>
+  </audio>
+  <video>
+    <title><p>{tab=ভিডিও}</p></title>
+    <matter>
+      <p>https://www.youtube.com/watch?v=iR31M0ZS8tA</p>
+    </matter>
+  </video>
+  <swaralipi>
+    <title><p>{tab=স্বরলিপি}</p></title>
+    <matter>
+      <p>
+        <img src="images/stories/swaralipi/manabataheen-bharat-shmashan.jpg" alt="" />
+      </p>
+    </matter>
+  </swaralipi>
+  <english>
+    <title><p>{tab=English}</p></title>
+    <matter></matter>
+  </english>
+</tabs>
