@@ -19,6 +19,8 @@ namespace Spell
         XmlNode video;
         XmlNode swaralipi;
         XmlNode english;
+        Boolean reset=false;
+
         public Form1()
         {
             InitializeComponent();
@@ -117,7 +119,7 @@ namespace Spell
             if (chkEnglish.Checked == true)
             {
                 sb.AppendLine(english["title"].InnerXml.Trim());
-                sb.AppendLine(english["matter"].InnerText.Trim());
+                sb.AppendLine(english["matter"].InnerXml.Trim());
             }
             sb.Append("{/tabs}");
             rtfAnswer.Text = sb.ToString();
@@ -214,32 +216,33 @@ namespace Spell
 
         private void chkAudio_CheckedChanged(object sender, EventArgs e)
         {
-            FillTextBox();
+            FillTextBox(reset);
         }
 
         private void chkVideo_CheckedChanged(object sender, EventArgs e)
         {
-            FillTextBox();
+            FillTextBox(reset);
         }
 
         private void chkSwaralipi_CheckedChanged(object sender, EventArgs e)
         {
-            FillTextBox();
+            FillTextBox(reset);
         }
 
         private void chkEnglish_CheckedChanged(object sender, EventArgs e)
         {
-            FillTextBox();
+            FillTextBox(reset);
         }
 
         private void chkRaagTaal_CheckedChanged(object sender, EventArgs e)
         {
-            FillTextBox();
+            FillTextBox(reset);
         }
 
         private void btnResetRaag_Click(object sender, EventArgs e)
         {
-            FillTextBox(true);
+            reset = true;
+            FillTextBox(reset);
         }
     }
 }
