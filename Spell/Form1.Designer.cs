@@ -37,6 +37,7 @@
             this.chkSwaralipi = new System.Windows.Forms.CheckBox();
             this.chkEnglish = new System.Windows.Forms.CheckBox();
             this.btnResetRaag = new System.Windows.Forms.Button();
+            this.cmbTaal = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // rtfAnswer
@@ -47,14 +48,14 @@
             this.rtfAnswer.Font = new System.Drawing.Font("SolaimanLipi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtfAnswer.Location = new System.Drawing.Point(0, 0);
             this.rtfAnswer.Name = "rtfAnswer";
-            this.rtfAnswer.Size = new System.Drawing.Size(653, 432);
+            this.rtfAnswer.Size = new System.Drawing.Size(766, 440);
             this.rtfAnswer.TabIndex = 4;
             this.rtfAnswer.Text = "";
             // 
             // btnClean
             // 
             this.btnClean.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClean.Location = new System.Drawing.Point(546, 438);
+            this.btnClean.Location = new System.Drawing.Point(659, 446);
             this.btnClean.Name = "btnClean";
             this.btnClean.Size = new System.Drawing.Size(95, 34);
             this.btnClean.TabIndex = 5;
@@ -68,7 +69,7 @@
             this.chkRaagTaal.AutoSize = true;
             this.chkRaagTaal.Checked = true;
             this.chkRaagTaal.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkRaagTaal.Location = new System.Drawing.Point(8, 448);
+            this.chkRaagTaal.Location = new System.Drawing.Point(8, 456);
             this.chkRaagTaal.Name = "chkRaagTaal";
             this.chkRaagTaal.Size = new System.Drawing.Size(98, 17);
             this.chkRaagTaal.TabIndex = 6;
@@ -80,7 +81,7 @@
             // 
             this.chkAudio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chkAudio.AutoSize = true;
-            this.chkAudio.Location = new System.Drawing.Point(107, 448);
+            this.chkAudio.Location = new System.Drawing.Point(107, 456);
             this.chkAudio.Name = "chkAudio";
             this.chkAudio.Size = new System.Drawing.Size(53, 17);
             this.chkAudio.TabIndex = 7;
@@ -92,7 +93,7 @@
             // 
             this.chkVideo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chkVideo.AutoSize = true;
-            this.chkVideo.Location = new System.Drawing.Point(161, 448);
+            this.chkVideo.Location = new System.Drawing.Point(161, 456);
             this.chkVideo.Name = "chkVideo";
             this.chkVideo.Size = new System.Drawing.Size(53, 17);
             this.chkVideo.TabIndex = 8;
@@ -104,7 +105,7 @@
             // 
             this.chkSwaralipi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chkSwaralipi.AutoSize = true;
-            this.chkSwaralipi.Location = new System.Drawing.Point(215, 448);
+            this.chkSwaralipi.Location = new System.Drawing.Point(215, 456);
             this.chkSwaralipi.Name = "chkSwaralipi";
             this.chkSwaralipi.Size = new System.Drawing.Size(68, 17);
             this.chkSwaralipi.TabIndex = 9;
@@ -116,7 +117,7 @@
             // 
             this.chkEnglish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chkEnglish.AutoSize = true;
-            this.chkEnglish.Location = new System.Drawing.Point(284, 448);
+            this.chkEnglish.Location = new System.Drawing.Point(284, 456);
             this.chkEnglish.Name = "chkEnglish";
             this.chkEnglish.Size = new System.Drawing.Size(60, 17);
             this.chkEnglish.TabIndex = 10;
@@ -127,7 +128,7 @@
             // btnResetRaag
             // 
             this.btnResetRaag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnResetRaag.Location = new System.Drawing.Point(349, 438);
+            this.btnResetRaag.Location = new System.Drawing.Point(349, 446);
             this.btnResetRaag.Name = "btnResetRaag";
             this.btnResetRaag.Size = new System.Drawing.Size(121, 34);
             this.btnResetRaag.TabIndex = 5;
@@ -135,11 +136,29 @@
             this.btnResetRaag.UseVisualStyleBackColor = true;
             this.btnResetRaag.Click += new System.EventHandler(this.btnResetRaag_Click);
             // 
+            // cmbTaal
+            // 
+            this.cmbTaal.FormattingEnabled = true;
+            this.cmbTaal.Items.AddRange(new object[] {
+            "দাদ্‌রা",
+            "কাহার্‌বা",
+            "ফের্‌তা",
+            "ফের্‌তা (দাদ্‌রা ও কাহার্‌বা)",
+            "ত্রিতাল",
+            "একতাল",
+            "ঝাঁপতাল"});
+            this.cmbTaal.Location = new System.Drawing.Point(476, 452);
+            this.cmbTaal.Name = "cmbTaal";
+            this.cmbTaal.Size = new System.Drawing.Size(121, 21);
+            this.cmbTaal.TabIndex = 11;
+            this.cmbTaal.SelectedIndexChanged += new System.EventHandler(this.cmbTaal_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 477);
+            this.ClientSize = new System.Drawing.Size(766, 485);
+            this.Controls.Add(this.cmbTaal);
             this.Controls.Add(this.chkEnglish);
             this.Controls.Add(this.chkSwaralipi);
             this.Controls.Add(this.chkVideo);
@@ -168,6 +187,7 @@
         private System.Windows.Forms.CheckBox chkSwaralipi;
         private System.Windows.Forms.CheckBox chkEnglish;
         private System.Windows.Forms.Button btnResetRaag;
+        private System.Windows.Forms.ComboBox cmbTaal;
     }
 }
 

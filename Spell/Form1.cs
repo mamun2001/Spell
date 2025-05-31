@@ -244,5 +244,10 @@ namespace Spell
             reset = true;
             FillTextBox(reset);
         }
+
+        private void cmbTaal_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

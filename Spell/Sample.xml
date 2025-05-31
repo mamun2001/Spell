@@ -2,7 +2,7 @@
 
 <tabs>
   <bani>
-    <title><p>{tab=বাণী}</p></title>
+    <title><p>{tab বাণী}</p></title>
     <matter>
       <pre>
         অম্বরে মেঘ-মৃদঙ বাজে জলদ-তালে
@@ -19,7 +19,7 @@
     </matter>
   </bani>
   <raag>
-    <title><p>{tab=রাগ ও তাল}</p></title>
+    <title><p>{tab রাগ ও তাল}</p></title>
     <matter>
       <raag>
         <title>রাগঃ</title>
@@ -32,20 +32,20 @@
     </matter>
   </raag>
   <audio>
-    <title><p>{tab=অডিও}</p></title>
+    <title><p>{tab অডিও}</p></title>
     <matter>
       <p>শিল্পীঃ চন্দ্রানী</p>
       <p>{saudioplayer}Song2/chandrani_momer_putul.mp3{/saudioplayer}</p>
     </matter>
   </audio>
   <video>
-    <title><p>{tab=ভিডিও}</p></title>
+    <title><p>{tab ভিডিও}</p></title>
     <matter>
       <p>https://www.youtube.com/watch?v=iR31M0ZS8tA</p>
     </matter>
   </video>
   <swaralipi>
-    <title><p>{tab=স্বরলিপি}</p></title>
+    <title><p>{tab স্বরলিপি}</p></title>
     <matter>
       <p>
         <img src="images/stories/swaralipi/manabataheen-bharat-shmashan.jpg" alt="" />
@@ -53,7 +53,7 @@
     </matter>
   </swaralipi>
   <english>
-    <title><p>{tab=English}</p></title>
+    <title><p>{tab English}</p></title>
     <matter></matter>
   </english>
 </tabs>
