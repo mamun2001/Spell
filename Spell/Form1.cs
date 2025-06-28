@@ -249,5 +249,11 @@ namespace Spell
         {
 
         }
+
+        private void btnCopyText_Click(object sender, EventArgs e)
+        {
+            Clipboard.Clear();            
+            Clipboard.SetText(rtfAnswer.Text);
+        }
     }
 }

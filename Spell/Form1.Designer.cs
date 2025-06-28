@@ -38,6 +38,7 @@
             this.chkEnglish = new System.Windows.Forms.CheckBox();
             this.btnResetRaag = new System.Windows.Forms.Button();
             this.cmbTaal = new System.Windows.Forms.ComboBox();
+            this.btnCopyText = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rtfAnswer
@@ -48,16 +49,16 @@
             this.rtfAnswer.Font = new System.Drawing.Font("SolaimanLipi", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtfAnswer.Location = new System.Drawing.Point(0, 0);
             this.rtfAnswer.Name = "rtfAnswer";
-            this.rtfAnswer.Size = new System.Drawing.Size(766, 440);
+            this.rtfAnswer.Size = new System.Drawing.Size(856, 462);
             this.rtfAnswer.TabIndex = 4;
             this.rtfAnswer.Text = "";
             // 
             // btnClean
             // 
             this.btnClean.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClean.Location = new System.Drawing.Point(659, 446);
+            this.btnClean.Location = new System.Drawing.Point(762, 468);
             this.btnClean.Name = "btnClean";
-            this.btnClean.Size = new System.Drawing.Size(95, 34);
+            this.btnClean.Size = new System.Drawing.Size(82, 34);
             this.btnClean.TabIndex = 5;
             this.btnClean.Text = "Clean Text";
             this.btnClean.UseVisualStyleBackColor = true;
@@ -69,7 +70,7 @@
             this.chkRaagTaal.AutoSize = true;
             this.chkRaagTaal.Checked = true;
             this.chkRaagTaal.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkRaagTaal.Location = new System.Drawing.Point(8, 456);
+            this.chkRaagTaal.Location = new System.Drawing.Point(8, 478);
             this.chkRaagTaal.Name = "chkRaagTaal";
             this.chkRaagTaal.Size = new System.Drawing.Size(98, 17);
             this.chkRaagTaal.TabIndex = 6;
@@ -81,7 +82,7 @@
             // 
             this.chkAudio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chkAudio.AutoSize = true;
-            this.chkAudio.Location = new System.Drawing.Point(107, 456);
+            this.chkAudio.Location = new System.Drawing.Point(107, 478);
             this.chkAudio.Name = "chkAudio";
             this.chkAudio.Size = new System.Drawing.Size(53, 17);
             this.chkAudio.TabIndex = 7;
@@ -93,7 +94,7 @@
             // 
             this.chkVideo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chkVideo.AutoSize = true;
-            this.chkVideo.Location = new System.Drawing.Point(161, 456);
+            this.chkVideo.Location = new System.Drawing.Point(161, 478);
             this.chkVideo.Name = "chkVideo";
             this.chkVideo.Size = new System.Drawing.Size(53, 17);
             this.chkVideo.TabIndex = 8;
@@ -105,7 +106,7 @@
             // 
             this.chkSwaralipi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chkSwaralipi.AutoSize = true;
-            this.chkSwaralipi.Location = new System.Drawing.Point(215, 456);
+            this.chkSwaralipi.Location = new System.Drawing.Point(215, 478);
             this.chkSwaralipi.Name = "chkSwaralipi";
             this.chkSwaralipi.Size = new System.Drawing.Size(68, 17);
             this.chkSwaralipi.TabIndex = 9;
@@ -117,7 +118,7 @@
             // 
             this.chkEnglish.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.chkEnglish.AutoSize = true;
-            this.chkEnglish.Location = new System.Drawing.Point(284, 456);
+            this.chkEnglish.Location = new System.Drawing.Point(284, 478);
             this.chkEnglish.Name = "chkEnglish";
             this.chkEnglish.Size = new System.Drawing.Size(60, 17);
             this.chkEnglish.TabIndex = 10;
@@ -128,7 +129,7 @@
             // btnResetRaag
             // 
             this.btnResetRaag.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnResetRaag.Location = new System.Drawing.Point(349, 446);
+            this.btnResetRaag.Location = new System.Drawing.Point(349, 468);
             this.btnResetRaag.Name = "btnResetRaag";
             this.btnResetRaag.Size = new System.Drawing.Size(121, 34);
             this.btnResetRaag.TabIndex = 5;
@@ -138,6 +139,7 @@
             // 
             // cmbTaal
             // 
+            this.cmbTaal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.cmbTaal.FormattingEnabled = true;
             this.cmbTaal.Items.AddRange(new object[] {
             "দাদ্‌রা",
@@ -147,17 +149,28 @@
             "ত্রিতাল",
             "একতাল",
             "ঝাঁপতাল"});
-            this.cmbTaal.Location = new System.Drawing.Point(476, 452);
+            this.cmbTaal.Location = new System.Drawing.Point(476, 474);
             this.cmbTaal.Name = "cmbTaal";
             this.cmbTaal.Size = new System.Drawing.Size(121, 21);
             this.cmbTaal.TabIndex = 11;
             this.cmbTaal.SelectedIndexChanged += new System.EventHandler(this.cmbTaal_SelectedIndexChanged);
             // 
+            // btnCopyText
+            // 
+            this.btnCopyText.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCopyText.Location = new System.Drawing.Point(676, 468);
+            this.btnCopyText.Name = "btnCopyText";
+            this.btnCopyText.Size = new System.Drawing.Size(82, 34);
+            this.btnCopyText.TabIndex = 5;
+            this.btnCopyText.Text = "Copy Text";
+            this.btnCopyText.UseVisualStyleBackColor = true;
+            this.btnCopyText.Click += new System.EventHandler(this.btnCopyText_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(766, 485);
+            this.ClientSize = new System.Drawing.Size(856, 507);
             this.Controls.Add(this.cmbTaal);
             this.Controls.Add(this.chkEnglish);
             this.Controls.Add(this.chkSwaralipi);
@@ -165,6 +178,7 @@
             this.Controls.Add(this.chkAudio);
             this.Controls.Add(this.chkRaagTaal);
             this.Controls.Add(this.btnResetRaag);
+            this.Controls.Add(this.btnCopyText);
             this.Controls.Add(this.btnClean);
             this.Controls.Add(this.rtfAnswer);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -188,6 +202,7 @@
         private System.Windows.Forms.CheckBox chkEnglish;
         private System.Windows.Forms.Button btnResetRaag;
         private System.Windows.Forms.ComboBox cmbTaal;
+        private System.Windows.Forms.Button btnCopyText;
     }
 }
 
